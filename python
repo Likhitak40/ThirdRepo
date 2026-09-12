@@ -1,0 +1,27 @@
+// CPP program to verify Nicomachus's Theorem
+#include <bits/stdc++.h>
+using namespace std;
+
+void NicomachusTheorem_sum(int n)
+{
+   // Compute sum of cubes
+   int sum = 0;
+   for (int k=1; k<=n; k++)
+      sum += k*k*k;
+   
+   // Check if sum is equal to
+   // given formula.
+   int triNo = n*(n+1)/2;
+   if (sum == triNo * triNo)
+     cout << "Yes";
+   else
+     cout << "No";
+}
+
+// driver function
+int main()
+{
+    int n = 5;
+    NicomachuTheorem_sum(n);
+    return 0;
+}
